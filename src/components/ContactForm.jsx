@@ -63,19 +63,33 @@ const Button = styled.button`
 const ContactForm = () => {
 
   const [popupMessage, setPopupMessage] = useState('');
+  const [phone, setPhone] = useState('');
   const navigate = useNavigate()
-  const formRef = useRef()
 
-  function formatPhoneNumber(number) {
-    return number.replace(/(\d{3})(\d{3})(\d{4})/, '\$1-\$2-\$3');
-  }
+  const formatPhone = (event) => {
+    let rawNumber = event.target.value.replace(/\D/g, '');
+    let formattedNumber = '';
+  
+    if (event.nativeEvent.inputType === 'deleteContentBackward') {
+      rawNumber = rawNumber.slice(0, -1);
+    }
+  
+    if (rawNumber.length > 0) {
+      formattedNumber = '(' + rawNumber.slice(0, 3) + ') ';
+    }
+    if (rawNumber.length >= 4) {
+      formattedNumber += rawNumber.slice(3, 6) + '-';
+    }
+    if (rawNumber.length >= 7) {
+      formattedNumber += rawNumber.slice(6, 10);
+    }
+    setPhone(formattedNumber);
+  };
+  
+
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    const phoneNumber = e.target.elements.phone.value
-    const formattedPhoneNumber = formatPhoneNumber(phoneNumber)
-    e.target.elements.phone.value = formattedPhoneNumber
 
     emailjs.sendForm(`${process.env.REACT_APP_SERVICE_ID}`, `${process.env.REACT_APP_TEMPLATE_ID}`, e.target, `${process.env.REACT_APP_PUBLIC_KEY}`)
       .then((result) => {
@@ -93,7 +107,7 @@ const ContactForm = () => {
   return (
     <Container>
       <Title>Contact Us</Title>
-      <Form ref={formRef} onSubmit={sendEmail}>
+      <Form onSubmit={sendEmail}>
         <Label htmlFor="name">Name</Label>
         <Input type="text" id="name" name="name" placeholder='Enter your name' required />
 
@@ -101,7 +115,7 @@ const ContactForm = () => {
         <Input type="email" id="email" name="email" placeholder='Enter your email' required />
 
         <Label htmlFor="phone">Phone (optional)</Label>
-        <Input type="tel" id="phone" name="phone" placeholder='555-555-5555' maxLength="12" pattern="\d{10}" />
+        <Input type="tel" id="phone" name="phone" placeholder='555-555-5555' value={phone} onChange={formatPhone} />
 
         <Label htmlFor="message">Message</Label>
         <TextArea id="message" name="message" rows="6" placeholder='How can we help you?' required />
