@@ -11,22 +11,35 @@ const Container = styled.div`
 
 const Section = styled.div`
   max-width: 800px;
-`
+`;
 
 const Title = styled.h2`
   font-size: 3rem;
   margin-bottom: 1rem;
+  
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
 `;
 
 const Subtitle = styled.h3`
   font-size: 2rem;
   margin-bottom: 1rem;
+  
+  @media (max-width: 768px) {
+    font-size: 1.8rem;
+  }
 `;
 
 const Paragraph = styled.p`
   font-size: 1.5rem;
   line-height: 2rem;
   margin-bottom: 1rem;
+  
+  @media (max-width: 768px) {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
 `;
 
 const AboutUs = () => {

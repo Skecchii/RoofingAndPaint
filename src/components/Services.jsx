@@ -10,6 +10,12 @@ const Container = styled.div`
   justify-content: space-evenly;
   align-items: center;
   padding: 4rem 2rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+  }
 `;
 
 const Service = styled.div`
@@ -18,6 +24,10 @@ const Service = styled.div`
   align-items: center;
   max-width: 500px;
   margin: 2rem;
+
+  @media (max-width: 768px) {
+    margin: 1rem;
+  }
 `;
 
 const Image = styled.img`
@@ -26,23 +36,40 @@ const Image = styled.img`
   height: 200px;
   object-fit: cover;
   border-radius: 50%;
+
+  @media (max-width: 768px) {
+    width: 150px;
+    height: 150px;
+  }
 `;
 
 const Title = styled.h3`
   font-size: 2rem;
   margin: 1rem 0;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const Description = styled.p`
   font-size: 1.5rem;
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 `;
 
 const LinkText = styled(Link)`
   font-size: 1.5rem;
   color: ${({ theme }) => theme.text};
   text-decoration: underline;
-`
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
+`;
 
 const Services = () => {
     return (

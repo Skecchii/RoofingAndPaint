@@ -11,16 +11,19 @@ const Container = styled.div`
 `;
 
 const Service = styled.div`
-  width: 1rem;
+  width: 100%;
   margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 25rem;
 
-  &:last-child {
-    margin-right: 0;
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 33.33%;
   }
 `;
 

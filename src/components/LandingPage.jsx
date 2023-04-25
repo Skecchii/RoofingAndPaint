@@ -30,6 +30,10 @@ const TextContainer = styled.div`
   width: 100%;
   margin: auto;
   text-align: center;
+
+  @media (max-width: 768px) {
+    padding: 3rem;
+  }
 `;
 
 const Title = styled.h1`
@@ -37,6 +41,14 @@ const Title = styled.h1`
   color: #fff;
   text-align: center;
   margin-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.75rem;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 2.75rem
+  }
 `;
 
 const Description = styled.p`
@@ -45,6 +57,10 @@ const Description = styled.p`
   text-align: center;
   margin-bottom: 2rem;
   font-weight: 500;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 `;
 
 const ButtonLink = styled(Link)`
@@ -62,7 +78,13 @@ const ButtonLink = styled(Link)`
   &:hover {
     background-color: #e64a19;
   }
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+  }
 `;
+
 
 
 const LandingPage = () => {

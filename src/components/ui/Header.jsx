@@ -11,10 +11,16 @@ import { FiSun, FiMoon } from 'react-icons/fi';
 
 const Container = styled.header`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 0rem 2rem;
   height: 120px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
 `;
 
 const LinkLogo = styled(Link)`
@@ -22,10 +28,18 @@ const LinkLogo = styled(Link)`
   font-weight: bold;
   text-decoration: none;
   cursor: default;
+
+  @media (max-width: 768px) {
+    margin-bottom: 1rem;
+  }
 `;
 
 const StyledLogo = styled.img`
   height: 100px;
+
+  @media (max-width: 768px) {
+    height: 80px;
+  }
 `
 
 const Label = styled.label`
@@ -33,6 +47,10 @@ const Label = styled.label`
   display: flex;
   align-items: center;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    margin-top: 1rem;
+  }
 `;
 
 const Header = () => {

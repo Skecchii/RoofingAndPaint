@@ -21,6 +21,12 @@ const Section = styled.div`
   &:last-child {
     margin-right: 0;
   }
+
+  @media (max-width: 768px) {
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
 `;
 
 const Title = styled.h4`
@@ -32,6 +38,12 @@ const LinkText = styled(Link)`
   color: ${({ theme }) => theme.text};
   display: block;
   margin-bottom: 0.5rem;
+
+  @media (max-width: 768px) {
+  ${Wrapper} {
+    flex-direction: column;
+  }
+}
 `;
 
 const Footer = () => {

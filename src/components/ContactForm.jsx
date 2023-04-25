@@ -12,6 +12,11 @@ const Container = styled.div`
 const Title = styled.h2`
   font-size: 2.5rem;
   margin: 2rem 0;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
 `;
 
 const Form = styled.form`
@@ -20,11 +25,19 @@ const Form = styled.form`
   align-items: center;
   width: 100%;
   max-width: 600px;
+
+  @media (max-width: 768px) {
+    max-width: 400px;
+  }
 `;
 
 const Label = styled.label`
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 `;
 
 const Input = styled.input`
@@ -34,6 +47,10 @@ const Input = styled.input`
   border: none;
   border-radius: 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 `;
 
 const TextArea = styled.textarea`
@@ -43,6 +60,10 @@ const TextArea = styled.textarea`
   border: none;
   border-radius: 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 `;
 
 const Button = styled.button`
@@ -52,13 +73,18 @@ const Button = styled.button`
   border-radius: 5px;
   color: white;
   background-color: #ff9800;
-
   cursor: pointer;
+  transition: background-color 0.3s ease;
 
   &:hover {
     background-color: #e64a19;
   }
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 `;
+
 
 const ContactForm = () => {
 
