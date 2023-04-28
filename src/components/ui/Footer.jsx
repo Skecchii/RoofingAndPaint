@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 
 const Container = styled.footer`
   padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Wrapper = styled.div`
@@ -46,24 +49,32 @@ const LinkText = styled(Link)`
 }
 `;
 
+
 const Footer = () => {
+
+  const handleClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
   return (
     <Container>
       <Wrapper>
         <Section>
           <Title>About Us</Title>
-          <p>We are a trusted provider of high-quality roofing and painting services,
-            dedicated to ensuring our clients' satisfaction with every project.</p>
+          <p>"High-quality roofing and painting services for residential and commercial clients. Licensed and insured."</p>
         </Section>
         <Section>
           <Title>Services</Title>
-          <LinkText to="/services/roofing">Roofing</LinkText>
-          <LinkText to="/services/painting">Painting</LinkText>
+          <LinkText to="/services/roofing" onClick={handleClick}>Roofing</LinkText>
+          <LinkText to="/services/painting" onClick={handleClick}>Painting</LinkText>
         </Section>
         <Section>
           <Title>Contact Us</Title>
-          <p>juanmtgonzalez@yahoo.com</p>
-          <p>(555) 555-5555</p>
+          <p>jbonsconstruction@gmail.com</p>
+          <p>(801)-215-9772</p>
         </Section>
         <Section>
           <Title>Follow Us</Title>

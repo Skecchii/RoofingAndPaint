@@ -48,6 +48,10 @@ const Input = styled.input`
   border-radius: 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 
+  ::placeholder {
+  color: #c4c4c4;
+  }
+  
   @media (max-width: 768px) {
     font-size: 1.2rem;
   }
@@ -60,6 +64,13 @@ const TextArea = styled.textarea`
   border: none;
   border-radius: 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  resize: none;
+  width: 100%;
+  height: 10rem;
+
+  ::placeholder {
+    color: #c4c4c4;
+  }
 
   @media (max-width: 768px) {
     font-size: 1.2rem;

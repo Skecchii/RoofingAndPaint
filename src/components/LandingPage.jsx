@@ -12,6 +12,9 @@ const Container = styled.div`
 `;
 
 const BackgroundImage = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: url(${({src}) => src});
   background-size: cover;
   background-position: center;
@@ -22,10 +25,6 @@ const BackgroundImage = styled.div`
 const TextContainer = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
   padding: 3rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   max-width: 1000px;
   width: 100%;
   margin: auto;
@@ -85,16 +84,21 @@ const ButtonLink = styled(Link)`
   }
 `;
 
-
-
 const LandingPage = () => {
+
+  const handleClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
     return (
         <Container>
             <BackgroundImage src={RoofImage} alt='roof'>
                 <TextContainer>
                     <Title>Expert Roofing and Painting Services</Title>
                     <Description>Transform your home with our professional roofing and painting services. Contact us today.</Description>
-                    <ButtonLink to='/contact'>Get a Quote</ButtonLink>
+                    <ButtonLink to='/contact' onClick={handleClick}>Get a Quote</ButtonLink>
                 </TextContainer>
             </BackgroundImage>
         </Container>

@@ -44,17 +44,18 @@ const Paragraph = styled.p`
 
 const AboutUs = () => {
   return (
-    <Container>
-      <Section>
-        <Title>About Us</Title>
-        <Subtitle>Our Mission</Subtitle>
-        <Paragraph>
-          At JBONS Construction our mission is to provide our customers with the highest quality roofing and painting services in a timely and professional manner.
-          We are committed to using the best materials and techniques to ensure that our work meets or exceeds industry standards.
-          Our goal is to earn our customers' trust and satisfaction by providing excellent service and workmanship, and by always putting their needs first.
-        </Paragraph>
-      </Section>
-    </Container>
+<Container>
+  <Section>
+    <Title>About Us</Title>
+    <Paragraph>
+      JBONS Construction is a trusted provider of high-quality roofing and painting services for residential and commercial clients. 
+      With 16+ years of experience, we are dedicated to ensuring our clients' satisfaction with every project, whether it's a new construction or an existing repair. 
+      We are fully licensed and insured, and use only the best materials and techniques to exceed industry standards. Our commitment to excellence, professionalism, and customer service has earned us a reputation as a reliable and dependable contractor. 
+      Contact us today to learn more about how we can help with your roofing and painting needs.
+    </Paragraph>
+  </Section>
+</Container>
+
   );
 };
 

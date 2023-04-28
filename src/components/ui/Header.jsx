@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import Navbar from './Navbar';
 import ThemeContext from '../darkmode/ThemeContext'
 
-import CompanyLogo from '../../assets/Logo.png'
+import DarkModeLogo from '../../assets/SVG-logo-black.svg'
+import LightModeLogo from '../../assets/SVG-logo-white.svg'
 
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
@@ -14,7 +15,7 @@ const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 0rem 2rem;
-  height: 120px;
+  height: 160px;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -24,8 +25,6 @@ const Container = styled.header`
 `;
 
 const LinkLogo = styled(Link)`
-  font-size: 2rem;
-  font-weight: bold;
   text-decoration: none;
   cursor: default;
 
@@ -35,10 +34,10 @@ const LinkLogo = styled(Link)`
 `;
 
 const StyledLogo = styled.img`
-  height: 100px;
+  height: 150px;
 
   @media (max-width: 768px) {
-    height: 80px;
+    height: 150px;
   }
 `
 
@@ -58,9 +57,17 @@ const Header = () => {
 
   return (
     <Container>
-      <LinkLogo to="/"><StyledLogo src={CompanyLogo} alt='logo'/></LinkLogo>
+      <LinkLogo to="/">
+        {theme === 'light' ? (
+          <StyledLogo src={DarkModeLogo} alt='logo'/>
+        ) : (
+          <StyledLogo src={LightModeLogo} alt='logo'/>
+        )}
+      </LinkLogo>
       <Navbar />
-      <Label onClick={toggleTheme}>{theme === 'light' ? <FiSun /> : <FiMoon />}</Label>
+      <Label onClick={toggleTheme}>
+        {theme === 'light' ? <FiSun /> : <FiMoon />}
+      </Label>
     </Container>
   );
 };

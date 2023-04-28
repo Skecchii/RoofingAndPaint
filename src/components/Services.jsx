@@ -72,6 +72,13 @@ const LinkText = styled(Link)`
 `;
 
 const Services = () => {
+
+  const handleClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
     return (
         <Container>
             <Service>
@@ -83,7 +90,7 @@ const Services = () => {
                     roofers will ensure that your roof is installed or repaired to the
                     highest standards of quality and safety.
                 </Description>
-                <LinkText to='/services/roofing'>Learn more</LinkText>
+                <LinkText to='/services/roofing' onClick={handleClick}>Learn more</LinkText>
             </Service>
             <Service>
                 <Image src={PaintingImage} alt="Painting" />
@@ -94,7 +101,7 @@ const Services = () => {
                     help you choose the perfect colors and finishes to transform your
                     home or business.
                 </Description>
-                <LinkText to='/services/painting'>Learn more</LinkText>
+                <LinkText to='/services/painting' onClick={handleClick}>Learn more</LinkText>
             </Service>
         </Container>
     );

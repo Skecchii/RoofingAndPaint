@@ -23,11 +23,7 @@ const NavItem = styled(Link)`
   justify-content: center;
   align-items: center;
   margin-left: 2rem;
-
-  &:hover {
-    text-decoration: underline;
-    height: 120px;
-  }
+  border-bottom: 2px solid transparent;
 
   @media (max-width: 768px) {
     margin: 0.5rem 0;

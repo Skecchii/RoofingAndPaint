@@ -38,7 +38,7 @@ const IconWrapper = styled(Link)`
   transition: background-color 0.2s ease-in-out;
 
   &:hover {
-    background-color: #999999;
+    background-color: #808080;
   }
 `;
 
@@ -59,10 +59,18 @@ const Title = styled.h3`
 `;
 
 const ServicesList = () => {
+
+  const handleClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
   return (
     <Container>
       <Service>
-        <IconWrapper to="/services/roofing">
+        <IconWrapper to="/services/roofing" onClick={handleClick}>
           <Icon>
             <FaHome />
           </Icon>
@@ -70,7 +78,7 @@ const ServicesList = () => {
         <Title>Roofing</Title>
       </Service>
       <Service>
-        <IconWrapper to="/services/painting">
+        <IconWrapper to="/services/painting" onClick={handleClick}>
           <Icon>
             <FaPaintRoller />
           </Icon>
