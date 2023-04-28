@@ -22,15 +22,6 @@ const Title = styled.h2`
   }
 `;
 
-const Subtitle = styled.h3`
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  
-  @media (max-width: 768px) {
-    font-size: 1.8rem;
-  }
-`;
-
 const Paragraph = styled.p`
   font-size: 1.5rem;
   line-height: 2rem;
