@@ -17,7 +17,7 @@ const Title = styled.h2`
   font-size: 3rem;
   margin-bottom: 1rem;
   
-  @media (max-width: 768px) {
+  @media (max-width: 845px) {
     font-size: 2.5rem;
   }
 `;
@@ -27,7 +27,7 @@ const Paragraph = styled.p`
   line-height: 2rem;
   margin-bottom: 1rem;
   
-  @media (max-width: 768px) {
+  @media (max-width: 845px) {
     font-size: 1.3rem;
     line-height: 1.8rem;
   }

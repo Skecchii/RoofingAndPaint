@@ -18,7 +18,7 @@ const Service = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: 845px) {
     width: 50%;
   }
 

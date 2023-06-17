@@ -9,7 +9,7 @@ const Container = styled.div`
   align-items: center;
   padding: 2rem;
 
-  @media (min-width: 768px) {
+  @media (min-width: 845px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -21,7 +21,7 @@ const Title = styled.h2`
   font-weight: bold;
   margin-bottom: 1rem;
 
-  @media (min-width: 768px) {
+  @media (min-width: 845px) {
     font-size: 3rem;
     margin-right: 2rem;
   }
@@ -33,7 +33,7 @@ const Image = styled.img`
   height: auto;
   margin-bottom: 1rem;
 
-  @media (min-width: 768px) {
+  @media (min-width: 845px) {
     width: 50%;
     margin-right: 2rem;
   }
@@ -44,7 +44,7 @@ const Description = styled.p`
   text-align: center;
   margin-bottom: 1rem;
 
-  @media (min-width: 768px) {
+  @media (min-width: 845px) {
     font-size: 1.8rem;
   }
 `;
@@ -54,7 +54,7 @@ const List = styled.ul`
   margin-left: 2rem;
   margin-bottom: 1rem;
 
-  @media (min-width: 768px) {
+  @media (min-width: 845px) {
     margin-left: 4rem;
   }
 `;
@@ -63,7 +63,7 @@ const ListItem = styled.li`
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 
-  @media (min-width: 768px) {
+  @media (min-width: 845px) {
     font-size: 1.8rem;
   }
 `;

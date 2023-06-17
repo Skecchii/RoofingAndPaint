@@ -25,7 +25,7 @@ const Section = styled.div`
     margin-right: 0;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 845px) {
     flex-basis: 100%;
     margin-right: 0;
     margin-bottom: 2rem;
@@ -42,7 +42,7 @@ const LinkText = styled(Link)`
   display: block;
   margin-bottom: 0.5rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 845px) {
   ${Wrapper} {
     flex-direction: column;
   }
@@ -81,7 +81,6 @@ const Footer = () => {
           <LinkText to="#">Facebook</LinkText>
           <LinkText to="#">Twitter</LinkText>
           <LinkText to="#">Instagram</LinkText>
-          <LinkText to="#">LinkedIn</LinkText>
         </Section>
       </Wrapper>
     </Container>

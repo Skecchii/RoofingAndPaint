@@ -4,6 +4,7 @@ import Home from "./pages/HomePage"
 import Services from "./components/Services"
 import Contact from "./components/ContactForm"
 import About from "./components/AboutUs"
+import ProjectSection from "./components/ProjectSection"
 
 import PaintingIfno from "./components/services/Painting"
 import RoofingInfo from "./components/services/Roofing"
@@ -44,6 +45,7 @@ function App() {
               <Route path='/about' element={<About />} />
               <Route path='/services/roofing' element={<RoofingInfo />} />
               <Route path='/services/painting' element={<PaintingIfno />} />
+              <Route path='/projects' element={<ProjectSection />} />
             </Routes>
           </MainContent>
           <Footer />

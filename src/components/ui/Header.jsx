@@ -17,7 +17,7 @@ const Container = styled.header`
   padding: 0rem 2rem;
   height: 160px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 845px) {
     flex-direction: column;
     height: auto;
     padding: 1rem;
@@ -28,7 +28,7 @@ const LinkLogo = styled(Link)`
   text-decoration: none;
   cursor: default;
 
-  @media (max-width: 768px) {
+  @media (max-width: 845px) {
     margin-bottom: 1rem;
   }
 `;
@@ -36,7 +36,7 @@ const LinkLogo = styled(Link)`
 const StyledLogo = styled.img`
   height: 150px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 845px) {
     height: 150px;
   }
 `
@@ -47,7 +47,7 @@ const Label = styled.label`
   align-items: center;
   cursor: pointer;
 
-  @media (max-width: 768px) {
+  @media (max-width: 845px) {
     margin-top: 1rem;
   }
 `;

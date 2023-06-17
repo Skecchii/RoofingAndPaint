@@ -30,7 +30,7 @@ const TextContainer = styled.div`
   margin: auto;
   text-align: center;
 
-  @media (max-width: 768px) {
+  @media (max-width: 845px) {
     padding: 3rem;
   }
 `;
@@ -41,7 +41,7 @@ const Title = styled.h1`
   text-align: center;
   margin-bottom: 2rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 845px) {
     font-size: 1.75rem;
   }
 
@@ -57,7 +57,7 @@ const Description = styled.p`
   margin-bottom: 2rem;
   font-weight: 500;
 
-  @media (max-width: 768px) {
+  @media (max-width: 845px) {
     font-size: 1.2rem;
   }
 `;
@@ -78,7 +78,7 @@ const ButtonLink = styled(Link)`
     background-color: #e64a19;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 845px) {
     font-size: 1.2rem;
     padding: 0.8rem 1.5rem;
   }

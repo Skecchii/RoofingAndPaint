@@ -9,7 +9,7 @@ const Nav = styled.nav`
   height: 100%;
   flex-grow: 1;
 
-  @media (max-width: 768px) {
+  @media (max-width: 845px) {
     flex-direction: column;
     height: auto;
   }
@@ -25,7 +25,7 @@ const NavItem = styled(Link)`
   margin-left: 2rem;
   border-bottom: 2px solid transparent;
 
-  @media (max-width: 768px) {
+  @media (max-width: 845px) {
     margin: 0.5rem 0;
     font-size: 1.2rem;
   }
@@ -37,6 +37,7 @@ const Navbar = () => {
     <Nav>
       <NavItem to="/">Home</NavItem>
       <NavItem to="/services">Services</NavItem>
+      <NavItem to="/projects">Projects</NavItem>
       <NavItem to="/about">About</NavItem>
       <NavItem to="/contact">Contact</NavItem>
     </Nav>

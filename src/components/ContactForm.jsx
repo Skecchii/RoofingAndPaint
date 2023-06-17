@@ -13,7 +13,7 @@ const Title = styled.h2`
   font-size: 2.5rem;
   margin: 2rem 0;
 
-  @media (max-width: 768px) {
+  @media (max-width: 845px) {
     font-size: 2rem;
     margin: 1rem 0;
   }
@@ -26,7 +26,7 @@ const Form = styled.form`
   width: 100%;
   max-width: 600px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 845px) {
     max-width: 400px;
   }
 `;
@@ -35,7 +35,7 @@ const Label = styled.label`
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 845px) {
     font-size: 1.2rem;
   }
 `;
@@ -52,7 +52,7 @@ const Input = styled.input`
   color: #c4c4c4;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 845px) {
     font-size: 1.2rem;
   }
 `;
@@ -72,7 +72,7 @@ const TextArea = styled.textarea`
     color: #c4c4c4;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 845px) {
     font-size: 1.2rem;
   }
 `;
@@ -91,7 +91,7 @@ const Button = styled.button`
     background-color: #e64a19;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 845px) {
     font-size: 1.2rem;
   }
 `;

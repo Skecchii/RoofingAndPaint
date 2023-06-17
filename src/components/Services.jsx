@@ -11,7 +11,7 @@ const Container = styled.div`
   align-items: center;
   padding: 4rem 2rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 845px) {
     flex-direction: column;
     justify-content: center;
     padding: 2rem;
@@ -25,7 +25,7 @@ const Service = styled.div`
   max-width: 500px;
   margin: 2rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 845px) {
     margin: 1rem;
   }
 `;
@@ -37,7 +37,7 @@ const Image = styled.img`
   object-fit: cover;
   border-radius: 50%;
 
-  @media (max-width: 768px) {
+  @media (max-width: 845px) {
     width: 150px;
     height: 150px;
   }
@@ -47,7 +47,7 @@ const Title = styled.h3`
   font-size: 2rem;
   margin: 1rem 0;
 
-  @media (max-width: 768px) {
+  @media (max-width: 845px) {
     font-size: 1.5rem;
   }
 `;
@@ -56,7 +56,7 @@ const Description = styled.p`
   font-size: 1.5rem;
   text-align: center;
 
-  @media (max-width: 768px) {
+  @media (max-width: 845px) {
     font-size: 1.2rem;
   }
 `;
@@ -66,7 +66,7 @@ const LinkText = styled(Link)`
   color: ${({ theme }) => theme.text};
   text-decoration: underline;
 
-  @media (max-width: 768px) {
+  @media (max-width: 845px) {
     font-size: 1.2rem;
   }
 `;
